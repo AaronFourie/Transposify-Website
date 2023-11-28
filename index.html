@@ -23,17 +23,17 @@
             <label for="songName" class="form-label">Song Name:</label>
             <input type="text" id="songName" class="form-control" required>
         </div>
-        
+
         <div class="mb-3">
             <label for="songKey" class="form-label">Song Key:</label>
             <input type="text" id="songKey" class="form-control" required>
         </div>
-        
+
         <div class="mb-3">
             <label for="songSheet" class="form-label">Song Sheet:</label>
             <textarea id="songSheet" class="form-control" required></textarea>
         </div>
-        
+
         <div class="mb-3">
             <label for="transposeKey" class="form-label">Transpose to Key:</label>
             <select id="transposeKey" class="form-select">
@@ -46,9 +46,14 @@
                 <option value="G">G</option>
             </select>
         </div>
-        
+
         <button type="submit" class="btn btn-primary">Transpose</button>
     </form>
+    <!-- Container to display transposed song -->
+    <div id="transposedSongSheet"></div>
+
+    <!-- Elements for download options -->
+    <button id="wordButton">Download as Word</button>
 </main>
             
 <script src="js/script.js"></script>

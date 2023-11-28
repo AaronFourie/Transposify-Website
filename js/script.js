@@ -18,11 +18,6 @@ async function transposeSong(event) {
         downloadAsWord(transposedSheetWithChords, songName);
       });
   
-      const pdfButton = document.getElementById('pdfButton');
-      pdfButton.addEventListener('click', () => {
-        downloadAsPDF(transposedSheetWithChords, songName);
-      });
-  
     } else {
       openPopup('Transposition Error');
     }
@@ -56,43 +51,6 @@ async function transposeSong(event) {
   document.body.appendChild(element); // Required for Firefox
   element.click();
   document.body.removeChild(element);
-  }
-  
-  async function downloadAsPDF(content, fileName) {
-    try {
-      const pdfDoc = await PDFLib.PDFDocument.create();
-      const page = pdfDoc.addPage();
-  
-      const font = await pdfDoc.embedFont(PDFLib.StandardFonts.Helvetica);
-      const fontSize = 12;
-  
-      const textLines = content.split('\n');
-      const textHeight = font.heightAtSize(fontSize);
-  
-      let currentY = page.getSize().height - 50;
-      for (const line of textLines) {
-        page.drawText(line, {
-          x: 50,
-          y: currentY,
-          size: fontSize,
-          font: font,
-          color: PDFLib.rgb(0, 0, 0),
-        });
-        currentY -= textHeight;
-      }
-  
-      const pdfBytes = await pdfDoc.save();
-      const file = new Blob([pdfBytes], { type: 'application/pdf' });
-  
-      const element = document.createElement('a');
-      element.href = URL.createObjectURL(pdfBlob);
-      element.download = `${fileName}_transposed.pdf`;
-      document.body.appendChild(element); // Required for Firefox
-      element.click();
-      document.body.removeChild(element);
-    } catch (error) {
-      console.error('Error generating PDF:', error);
-    }
   }
   
   function transposeChords(songSheet, songKey, transposeKey) {
