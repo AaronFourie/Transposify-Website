@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <!--Page Title-->
+    <title>Transposify - Free Song Transposer</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon" />
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="css/namari-color.css">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status" class="la-ball-triangle-path">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!--End of Preloader-->
+
+    <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+        <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+        <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+        <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+        <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+    </div>
+
+    <div id="wrapper">
+
+        <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+            <div id="header" class="nav-collapse">
+                <div class="row clearfix">
+                    <div class="col-1">
+
+                        <!--Logo-->
+                        <div id="logo">
+
+                            <!--Logo that is shown on the banner-->
+                            <!--End of Banner Logo-->
+                            <!--The Logo that is shown on the sticky Navigation Bar-->
+                            <h1 id="navigation-logo" alt="Landing Page">TRANSPOSIFY</h1>
+                            <!--End of Navigation Logo-->
+
+                        </div>
+                        <!--End of Logo-->
+
+                        <!--Main Navigation-->
+                        <nav id="nav-main">
+                            <ul>
+                                <li>
+                                    <a href="#banner">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#about">How It Works</a>
+                                </li>
+                                <li>
+                                    <a href="#services">Features</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--End of Main Navigation-->
+
+                        <div id="nav-trigger"><span></span></div>
+                        <nav id="nav-mobile"></nav>
+
+                    </div>
+                </div>
+            </div><!--End of Header-->
+            <!--Banner Content-->
+            <div id="banner-content" class="row clearfix">
+
+                <div class="col-38">
+
+                    <div class="section-heading">
+                        <h1>TRANSPOSE ANY SONG IN SECONDS</h1>
+                    </div>
+
+                    <main class="container mt-4">
+                        <form id="transposeForm">
+                            <div class="mb-3">
+                                <label for="songName" class="form-label">Song Name:</label>
+                                <input type="text" id="songName" class="form-control" required>
+                            </div>
+        
+                            <div class="mb-3">
+                                <label for="songKey" class="form-label">Song Key:</label>
+                                <input type="text" id="songKey" class="form-control" required>
+                            </div>
+        
+                            <div class="mb-3">
+                                <label for="songSheet" class="form-label">Song Sheet:</label>
+                                <textarea id="songSheet" class="form-control" required></textarea>
+                            </div>
+        
+                            <div class="mb-3">
+                                <label for="transposeKey" class="form-label">Transpose to Key:</label>
+                                <select id="transposeKey" class="form-select">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="E">E</option>
+                                    <option value="F">F</option>
+                                    <option value="G">G</option>
+                                </select>
+                            </div>
+        
+                            <button type="submit" class="btn btn-primary">Transpose</button>
+                        </form>
+                    </main>
+        
+
+                </div>
+
+            </div><!--End of Row-->
+        </header>
+
+        <!--Main Content Area-->
+        <main id="content">
+
+            <!--Introduction-->
+            <section id="about" class="introduction scrollto">
+
+                <div class="row clearfix">
+
+                    <div class="col-3">
+                        <div class="section-heading">
+                            <h3>THE PROCESS</h3>
+                            <h2 class="section-title">How you'll go from KEY to KEY</h2>
+                            <p class="section-subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-2-3">
+
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-html5 fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Enter the Song name</h4>
+                                <p>
+                                    Simply add in any track that title. The official song title must be entered. Make sure it is entered correctly and you're good
+                                </p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-bolt fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Enter the Original song key</h4>
+                                <p>
+                                    Simply fill in the song key you want to transpose from
+                                </p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-tablet fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Copy &amp; paste the song sheet</h4>
+                                <p>
+                                    Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro
+                                    nemore vivendum
+                                </p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+                        <!--Icon Block-->
+                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                            <!--Icon-->
+                            <div class="icon">
+                                <i class="fa fa-rocket fa-2x"></i>
+                            </div>
+                            <!--Icon Block Description-->
+                            <div class="icon-block-description">
+                                <h4>Click Transpose!</h4>
+                                <p>
+                                    Id porro tritani recusabo usu, eum intellegam consequuntur et. Fugit debet ea sit, an pro
+                                    nemore vivendum
+                                </p>
+                            </div>
+                        </div>
+                        <!--End of Icon Block-->
+
+                    </div>
+
+                </div>
+
+
+            </section>
+            <!--End of Introduction-->
+            <!--Content Section-->
+            
+
+            <!--End of Testimonials-->
+            <!--Clients-->
+            <section id="clients" class="scrollto clearfix">
+                <div class="row clearfix">
+
+                    <div class="col-3">
+
+                        <div class="section-heading">
+                            <h3>TRUST</h3>
+                            <h2 class="section-title">We transpose in these keys</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="col-2-3">
+
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo1.png" alt="Company" />
+                            <div class="client-overlay"><span>A</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo2.png" alt="Company" />
+                            <div class="client-overlay"><span>B</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo3.png" alt="Company" />
+                            <div class="client-overlay"><span>C</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo4.png" alt="Company" />
+                            <div class="client-overlay"><span>D</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo5.png" alt="Company" />
+                            <div class="client-overlay"><span>E</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo6.png" alt="Company" />
+                            <div class="client-overlay"><span>F</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="images/company-images/company-logo7.png" alt="Company" />
+                            <div class="client-overlay"><span>G</span></div>
+                        </a>
+                    </div>
+
+                </div>
+                
+            </section>
+            <!--End of Clients-->
+            <!--End of Pricing Tables-->
+            <!-- Main Content -->
+            
+
+            <script src="js/script.js"></script>
+        </main>
+        <!--End Main Content Area-->
+        <!--Footer-->
+        <footer id="landing-footer" class="clearfix">
+            <div class="row clearfix">
+
+                <p id="copyright" class="col-2">Made with love by <a href="https://www.shapingrain.com">ShapingRain</a></p>
+
+                <!--Social Icons in Footer-->
+            
+                <!--End of Social Icons in Footer-->
+            </div>
+        </footer>
+        <!--End of Footer-->
+
+    </div>
+
+    <!-- Include JavaScript resources -->
+    <script src="js/jquery.1.8.3.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/featherlight.min.js"></script>
+    <script src="js/featherlight.gallery.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.stickyNavbar.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/images-loaded.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/site.js"></script>
+
+
+</body>
+</html>
+
+
